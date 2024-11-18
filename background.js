@@ -1,5 +1,5 @@
 // Listen for messages from other parts of the extension (like popup or content scripts)
-chrome.runtime.onMessage.addListener((message, sendResponse) => {
+chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
   // Check if the action in the message is "getBaseUrl"
   if (message.action === "getBaseUrl") {
     // Immediately invoked async function to handle the process of fetching the base URL
