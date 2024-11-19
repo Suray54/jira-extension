@@ -46,6 +46,11 @@ th {
   font-size: 14px;
 }
 
+td:first-child, /* Targeting the first column */
+th:first-child {
+  width: 15%; /* Increase the width of the first column (Jira ticket key) */
+}
+
 tr:nth-child(even) {
   background-color: #f8f9fa;
 }
