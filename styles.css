@@ -1,152 +1,268 @@
 /* General Reset and Body */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* Sets the font family for the entire page to a modern, sans-serif font */
+
   margin: 0;
+  /* Removes any default margin around the body */
+
   padding: 15px;
+  /* Adds padding inside the body to create some space from the edges */
+
   background-color: #f8f9fa;
+  /* Sets a light grey background color for the entire page */
+
   color: #343a40;
+  /* Sets a dark grey text color for readability */
+
   width: 800px;
+  /* Sets the width of the body element */
+
   box-sizing: border-box;
+  /* Ensures padding and borders are included in the total width calculation */
 }
 
 h2 {
   text-align: center;
+  /* Centers the heading horizontally */
+
   color: #495057;
+  /* Sets a medium grey color for the heading text */
+
   font-weight: 500;
+  /* Sets the font weight to medium */
+
   margin-bottom: 20px;
+  /* Adds space below the heading */
 }
 
 /* Container */
 #ticket-container {
   overflow-x: auto;
+  /* Enables horizontal scrolling if the content overflows the container width */
+
   margin-top: 10px;
+  /* Adds space at the top of the container */
 }
 
 /* Table Styling */
 table {
   width: 100%;
+  /* Ensures the table takes up the full width of its container */
+
   border-collapse: collapse;
+  /* Collapses the borders between table cells */
+
   background-color: #ffffff;
+  /* Sets the background color of the table to white */
+
   border-radius: 8px;
+  /* Rounds the corners of the table */
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  /* Adds a subtle shadow around the table for better visibility */
 }
 
 th,
 td {
   text-align: left;
+  /* Aligns text to the left inside both table header and body cells */
+
   padding: 12px;
+  /* Adds padding inside the cells for better readability */
+
   border-bottom: 1px solid #e9ecef;
+  /* Adds a light border at the bottom of each cell */
+
   word-wrap: break-word;
+  /* Ensures long words or content will break into multiple lines if necessary */
 }
 
 th {
   background-color: #f1f3f5;
+  /* Sets a light grey background color for table headers */
+
   color: #495057;
+  /* Sets the color of the header text to a medium grey */
+
   font-weight: 600;
+  /* Sets the font weight of the table header to bold */
+
   font-size: 14px;
+  /* Sets the font size of the table header text */
 }
 
 td:first-child, /* Targeting the first column */
 th:first-child {
   width: 15%; /* Increase the width of the first column (Jira ticket key) */
+  /* Adjusts the width of the first column (ticket key) to make it more spacious */
 }
 
 tr:nth-child(even) {
   background-color: #f8f9fa;
+  /* Sets an alternating background color for even rows to make the table more readable */
 }
 
 tr:hover {
   background-color: #e9ecef;
+  /* Adds a highlight effect for table rows when hovered */
+
   transition: background-color 0.3s;
+  /* Smoothens the transition of the background color when hovering over a row */
 }
 
 /* Links */
 a {
   text-decoration: none;
+  /* Removes the default underline from links */
+
   color: #007bff;
+  /* Sets a blue color for links */
+
   font-weight: 500;
+  /* Sets the font weight of the links to medium */
 }
 
 a:hover {
   text-decoration: underline;
+  /* Adds an underline to links when hovered */
 }
 
 /* Ticket Icon */
 .ticket-icon {
   width: 18px;
   height: 18px;
+  /* Sets the size of the ticket icon */
+
   vertical-align: middle;
+  /* Vertically aligns the icon in the middle of the text */
+
   margin-right: 8px;
+  /* Adds space between the icon and the text */
 }
 
 /* Status Badge */
 .status {
   font-weight: 500;
+  /* Sets the font weight of the status badge to medium */
+
   padding: 5px 8px;
+  /* Adds padding inside the status badge */
+
   border-radius: 12px;
+  /* Rounds the corners of the status badge */
+
   font-size: 12px;
+  /* Sets the font size of the status text */
+
   text-align: center;
+  /* Centers the status text inside the badge */
+
   display: inline-block;
+  /* Makes the status badge an inline block element for better styling */
+
   color: #ffffff;
+  /* Sets the text color of the status badge to white */
 }
 
 .status.todo {
   background-color: #ffca80;
+  /* Sets the background color of the 'To Do' status to a light orange */
+
   color: #6c757d;
+  /* Sets the text color of the 'To Do' status to a dark grey */
 }
 
 .status.in-progress {
   background-color: #85c1ff;
+  /* Sets the background color of the 'In Progress' status to light blue */
+
   color: #0056b3;
+  /* Sets the text color of the 'In Progress' status to dark blue */
 }
 
 .status.done {
   background-color: #a8dfc3;
+  /* Sets the background color of the 'Done' status to light green */
+
   color: #155724;
+  /* Sets the text color of the 'Done' status to dark green */
 }
 
 .status.other {
   background-color: #cfc3e1;
+  /* Sets the background color of other statuses to a light purple */
+
   color: #4e3f78;
+  /* Sets the text color of the 'Other' status to dark purple */
 }
 
 /* Time Tracking Input */
 .time-tracking {
   display: flex;
+  /* Uses flexbox to align the elements inside the time-tracking container horizontally */
+
   gap: 8px;
+  /* Adds space between the input field and the submit button */
 }
 
 .time-input {
   flex: 1;
+  /* Ensures the input field takes up the available space in the container */
+
   padding: 6px 10px;
+  /* Adds padding inside the input field for better user experience */
+
   border: 1px solid #ced4da;
+  /* Adds a light border around the input field */
+
   border-radius: 4px;
+  /* Rounds the corners of the input field */
+
   font-size: 14px;
+  /* Sets the font size of the input text */
 }
 
 .time-submit {
   padding: 6px 10px;
+  /* Adds padding inside the submit button */
+
   background-color: #007bff;
+  /* Sets the background color of the submit button to blue */
+
   color: white;
+  /* Sets the text color of the submit button to white */
+
   border: none;
+  /* Removes the border from the submit button */
+
   border-radius: 4px;
+  /* Rounds the corners of the submit button */
+
   cursor: pointer;
+  /* Changes the cursor to a pointer to indicate the button is clickable */
 }
 
 .time-submit:hover {
   background-color: #0056b3;
+  /* Changes the background color of the submit button to a darker blue when hovered */
 }
 
 /* Feedback Message */
 .feedback {
   margin-top: 5px;
+  /* Adds space above the feedback message */
+
   font-size: 12px;
+  /* Sets the font size of the feedback message */
 }
 
 .feedback.success {
   color: #28a745;
+  /* Sets the color of success messages to green */
 }
 
 .feedback.error {
   color: #dc3545;
+  /* Sets the color of error messages to red */
 }
