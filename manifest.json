@@ -11,7 +11,7 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "48": "icon48.png"
+      "48": "images/icon48.png"
     },
     "default_title": "Jira Tickets"
   }
