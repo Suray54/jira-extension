@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Jira Assigned Tickets",
+  "name": "Jira Time Logger",
   "version": "1.0",
   "description": "Lists Jira tickets assigned to the logged-in user.",
   "permissions": ["activeTab", "storage", "cookies"],
